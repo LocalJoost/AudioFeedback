@@ -31,7 +31,7 @@ namespace HoloToolkitExtensions.Audio
         {
             if (_ttsManager != null && _messages.Count > 0)
             {
-                if(! (_ttsManager.SpeechTextInQueue() || _ttsManager.IsSpeaking()))
+                if(!(_ttsManager.SpeechTextInQueue() || _ttsManager.IsSpeaking()))
                 {
                     _ttsManager.StartSpeaking(_messages.Dequeue());
                 }
